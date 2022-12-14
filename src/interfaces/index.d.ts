@@ -10,3 +10,14 @@ export interface IPost {
   createdAt: string;
   category: { id: number };
 }
+
+export interface IUser {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  status: boolean;
+  birthday: string;
+  skills: string[];
+  avatar: [{ uid: string; url: string }];
+}

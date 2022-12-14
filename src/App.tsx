@@ -12,6 +12,7 @@ import dataProvider from "@pankod/refine-simple-rest";
 import "@pankod/refine-antd/dist/styles.min.css";
 import routerProvider from "@pankod/refine-react-router-v6";
 import { PostList, PostCreate, PostEdit, PostShow } from "pages/posts";
+import { UserList, UserShow, UserEdit } from "pages/users";
 
 function App() {
   return (
@@ -29,6 +30,12 @@ function App() {
           create: PostCreate,
           edit: PostEdit,
           show: PostShow,
+        },
+        {
+          name: "users",
+          list: UserList,
+          edit: UserEdit,
+          show: UserShow,
         },
       ]}
     />
